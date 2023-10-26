@@ -19,7 +19,7 @@ pip install -r requirements.txt
 ## **The Logic of Code**
 
 ***
-
+<div align=center><img width="150" height="150" src="https://s4.51cto.com/images/blog/202112/31054545_61ce2889e85dd22976.png?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_30,g_se,x_10,y_10,shadow_20,type_ZmFuZ3poZW5naGVpdGk="/></div>
 
 <div align="center">
             <img scr="https://github.com/Before2023/Screening-Gene-Combinations-for-Neuronal-Identification/blob/main/code/image/spatial_topological_relations_of_neurons.png" alt="the logic of code"/>
