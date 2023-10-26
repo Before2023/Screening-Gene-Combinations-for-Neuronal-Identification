@@ -22,7 +22,7 @@ pip install -r requirements.txt
 
 
 <div align="center">
-            <img width="200" height="150" scr="https://github.com/Before2023/Screening-Gene-Combinations-for-Neuronal-Identification/blob/main/code/image/spatial_topological_relations_of_neurons.png" alt="the logic of code"/>
+            <img width="200" height="150" scr="[https://github.com/Before2023/Screening-Gene-Combinations-for-Neuronal-Identification/blob/main/code/image/spatial_topological_relations_of_neurons.png](https://github.com/Before2023/Screening-Gene-Combinations-for-Neuronal-Identification/blob/main/code/image/spatial_topological_relations_of_neurons.png)" alt="the logic of code"/>
 </div>
 
 (1). To compute neuronal distances and get final neuron sets for iteration and gene combinations screening.  
