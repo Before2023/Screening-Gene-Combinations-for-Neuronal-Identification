@@ -19,9 +19,9 @@ pip install -r requirements.txt
 ## **The Logic of Code**
 
 ***
-<div align=center><img width="300" height="300" src="./code/image/the_logic_of_code.png"/></div>
 
-<div align=center><img width="300" height="300" scr="./code/image/the_logic_of_code.png"/></div>
+<div align=center><img width="600" height="500" src="./code/image/the_logic_of_code.png"/></div>
+
 
 (1). To compute neuronal distances and get final neuron sets for iteration and gene combinations screening.  
 (2). To select suitable candidate genes for screening.  
