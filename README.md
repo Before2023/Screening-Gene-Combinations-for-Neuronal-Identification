@@ -21,9 +21,7 @@ pip install -r requirements.txt
 ***
 <div align=center><img width="150" height="150" src="./code/image/the_logic_of_code.png"/></div>
 
-<div align="center">
-            <img scr="https://github.com/Before2023/Screening-Gene-Combinations-for-Neuronal-Identification/blob/main/code/image/spatial_topological_relations_of_neurons.png" alt="the logic of code"/>
-</div>
+<div align="center"><img scr="./code/image/the_logic_of_code.png"/></div>
 
 (1). To compute neuronal distances and get final neuron sets for iteration and gene combinations screening.  
 (2). To select suitable candidate genes for screening.  
