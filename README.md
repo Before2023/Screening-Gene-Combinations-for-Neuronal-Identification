@@ -30,7 +30,7 @@ pip install -r requirements.txt
 
 **To get final neuron pairs for iteration and screening gene combinations**
 
-<div align=center><img width="400" height="300" src="./code/image/spatial_topological_relations_of_neurons.png" alt="Spatial Topological Relations"/></div>
+<div align=center><img width="300" height="300" src="./code/image/spatial_topological_relations_of_neurons.png" alt="Spatial Topological Relations"/></div>
 
 Firstly, to divide the whole neurons into small sets by the topological boundary of each cell. Here, 
 distance between neurons, proximity of boundary neurons and spatial angel between two neighbor neurons with the central neuron
