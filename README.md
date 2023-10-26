@@ -20,7 +20,7 @@ pip install -r requirements.txt
 
 ***
 
-<div align=center><img width="600" height="500" src="./code/image/the_logic_of_code.png"/></div>
+<div align=center><img width="600" height="500" src="./code/image/the_logic_of_code.png" alt="The Logic of Code"/></div>
 
 
 (1). To compute neuronal distances and get final neuron sets for iteration and gene combinations screening.  
@@ -32,9 +32,7 @@ pip install -r requirements.txt
 
 ![spatial topological relations](./code/image/spatial_topological_relations_of_neurons.png)
 
-<div align="center">
-            <img width="200" height="150" scr="./code/image/spatial_topological_relations_of_neurons.png" alt="spatial topological relations"/>
-</div>
+<div align=center><img width="600" height="500" src="./code/image/spatial_topological_relations_of_neurons.png" alt="Spatial Topological Relations"/></div>
 
 Firstly, to divide the whole neurons into small sets by the topological boundary of each cell. Here, 
 distance between neurons, proximity of boundary neurons and spatial angel between two neighbor neurons with the central neuron
