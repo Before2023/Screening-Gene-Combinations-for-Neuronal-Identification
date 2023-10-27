@@ -35,7 +35,7 @@ pip install -r requirements.txt
 Firstly, to divide the whole neurons into small sets by the topological boundary of each cell. Here, 
 distance between neurons, proximity of boundary neurons and spatial angel between two neighbor neurons with the central neuron
 are considered to determine the topological boundary range of each neuron. The reason of considering the spatial angle as a parameter of determining topological boundary
-is that location and size of one topological boundary neuron may block connections between the central neuron and others. 
+is that location and size of one topological boundary neuron may affect connections between the central neuron and others. 
 The smaller the spatial angle, the more important the distance parameter plays in splitting neuron sets. 
 After that, neurons in the small neuron sets segmented are paired and then
 deduplicated to obtain the final neuron data used for iteration and screening gene combinations.
