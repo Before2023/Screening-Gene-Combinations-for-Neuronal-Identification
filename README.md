@@ -42,10 +42,11 @@ deduplicated to obtain the final neuron data used for iteration and screening ge
 
 **The simple logic of iteration and screening gene combinations**
 
-For each neuron pair, one deletes genes that express both or neither and then the left genes are able to identify the neuron 
-pair. Through setting parameter [***at_least_gene_n***]() in the script generate_gene_combinations.py, one can adjust 
+For each neuron pair, one deletes candidate genes that are either expressed or not expressed at all
+and then the left candidate genes are able to identify these two neurons. 
+Through setting parameter [***at_least_gene_n***]() in the script generate_gene_combinations.py, one can adjust 
 at least the number of genes identifying each neuron pair. Note that when number of the genes is less than at_least_gene_n, 
-no gene combinations will be obtained for that neuron pair. Finally, gene combinations generated for each neuron pair are 
+no gene combinations will be obtained for that neuron pair. Gene combinations generated for each neuron pair are finally
 merged in order and minimal gene combinations are collected by minimal_union_logVersion.py.
 
 ***
@@ -70,12 +71,12 @@ python main_divide_neuron_sets.py
 **Description of part parameters:**  
 
 **Nmin_list**: a list of maximum distances between neurons.  
-**neuron_asymmetry**: optional ['Both', 'left', 'right'], for whether to distinguish L/R or D/V of neurons. Here, to select 'Both' for computing distances between neurons.  
-**only_in_ganglia**: Bool type [True, False], for Whether to divide the neuron set according to ganglia. Here, to select False.  
-**neurons_source**: optional ['union', 'position_7', 'position_11', ...], to select which NeuroPAL dataset to obtain final neuron data. 
+**neuron_asymmetry**: optional ['Both', 'left', 'right'], Determine whether to distinguish L/R or D/V of neurons. Here, to select 'Both' for computing distances of each neuron with others.  
+**only_in_ganglia**: Bool type [True, False], Determine whether to divide the neuron set according to ganglia to which it belongs. Here, to select False.  
+**neurons_source**: optional ['union', 'position_7', 'position_11', ...], to select which NeuroPAL dataset used for obtaining final neuron data. 
 Here. to select 'union' to merge all NeuroPAL datasets.  
-**save_excel_dir**: to save neuron sets of each NeuroPALs under each Nmin.  
-**save_final_dir_format**: to save the final neuron data under each Nmin.  
+**save_excel_dir**: data directory to save neuron sets of each NeuroPAL dataset under each Nmin.  
+**save_final_dir_format**: data directory to save the final neuron data under each Nmin.  
 
 ### **To iterate and screen gene combinations**
 
@@ -131,18 +132,18 @@ done
 **Description of part parameters:** 
 
 **For generate_gene_combinations.py**  
-**at_least_gene_n**: at least number of genes identifying one neuron pair.  
-**screen_data_path**: data path of candidate screening genes including columns ['gene_id'] + [neuron names].      
+**at_least_gene_n**: at least number of candidate genes identifying one neuron pair.  
+**screen_data_path**: data path of candidate genes used for screening, which include columns ['gene_id'] + [neuron names].      
 **fneurons_data_path**: data path of final neuron data which includes a 'T.B. neurons' column of neuron pairs.    
-**data_dir**: data directory to save result of screening gene combinations.  
+**data_dir**: data directory to save results of gene combinations screened.  
 **pool_n**: multiprocessing number. 
 
 **For minimal_union_logVersion.py**  
-**max_gene_combn**: the upper limit of the number of genes in a single gene combination.     
-**file0_first_gene_combn**: to select the first n gene combination files of one neuron pair to merge.       
-**file1_first_gene_combn**: to keep the first n gene combination files after merging.      
-**file0_max_readrow_n**: to read maximal row number of summary of the first n gene combinaiton files of one neuron pair to merging for reducing computation and saving time.         
-**file1_max_readrow_n**: to read maximal row number of the first n gene combination files after merging for next merging. 
+**max_gene_combn**: the upper limit of gene number in a single gene combination.     
+**file0_first_gene_combn**: number of the first n gene combination files of each neuron pair to merge.       
+**file1_first_gene_combn**: number of the first n merged files.      
+**file0_max_readrow_n**: the maximal total number of lines used in file0_first_gene_combn files for saving computing memory and time.         
+**file1_max_readrow_n**: the maximal total number of lines used in file1_first_gene_combn files.
 
 
 ### **To supplement unidentified neurons**
