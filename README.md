@@ -37,8 +37,7 @@ distance between neurons, proximity of boundary neurons and spatial angel betwee
 are considered to determine the topological boundary range of each neuron. The reason of considering the spatial angle as a parameter of determining topological boundary
 is that location and size of one topological boundary neuron may affect connections between the central neuron and others. 
 The smaller the spatial angle, the more important the distance parameter plays in splitting neuron sets. 
-After that, neurons in the small neuron sets segmented are paired and then
-deduplicated to obtain the final neuron data used for iteration and screening gene combinations.
+After that, neurons in the small neuron sets segmented are paired and deduplicated to obtain the final neuron data used for iteration and screening gene combinations.
 
 **The simple logic of iteration and screening gene combinations**
 
