@@ -42,7 +42,7 @@ After that, neurons in the small neuron sets segmented are paired and deduplicat
 **The simple logic of iteration and screening gene combinations**
 
 For each neuron pair, one deletes candidate genes that are either expressed or not expressed at all
-and then the left candidate genes are able to identify these two neurons. 
+and then the remaining candidate genes are capable of identifying these two neurons. 
 Through setting parameter [***at_least_gene_n***]() in the script generate_gene_combinations.py, one can adjust 
 at least the number of genes identifying each neuron pair. Note that when number of the genes is less than at_least_gene_n, 
 no gene combinations will be obtained for that neuron pair. Gene combinations generated for each neuron pair are finally
