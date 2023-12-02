@@ -1,6 +1,7 @@
 from scipy.sparse import vstack
 from scipy.sparse import csr_matrix
 import time
+import numpy as np
 from generate_gene_combinations import *
 import warnings
 warnings.filterwarnings("ignore")
