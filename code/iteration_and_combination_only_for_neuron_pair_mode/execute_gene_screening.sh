@@ -28,7 +28,7 @@ do
     file1_first_gene_combn=2
     file0_max_readrow_n=50000
     file1_max_readrow_n=10000
-    nohup python minimal_union_logVersion.py ${main_dir} ${screen_data_path} ${data_dir} ${file0_first_gene_combn} ${file1_first_gene_combn} ${file0_max_readrow_n} ${file1_max_readrow_n} ${max_gene_combn} > ./nohup_log/nohup_minimal_union.log 2>&1 &
+    nohup python minimal_union_logVersion.py ${main_dir} ${screen_data_path} ${data_dir} ${file0_first_gene_combn} ${file1_first_gene_combn} ${file0_max_readrow_n} ${file1_max_readrow_n} ${max_gene_combn} > ./nohup_log/nohup_minimal_union-${file1_max_readrow_n}.log 2>&1 &
     wait
 done
 
