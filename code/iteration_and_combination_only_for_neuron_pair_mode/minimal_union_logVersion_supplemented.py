@@ -105,8 +105,7 @@ if __name__ == '__main__':
     screen_data = pd.read_csv(screen_data_path)
     gene_n = screen_data.shape[0]
     # 可变参数
-    save_minimal_union_dir = data_dir + "/minimal_union_%s_%s" % (file0_first_gene_combn,
-                                                                  file1_first_gene_combn)
+    save_minimal_union_dir = data_dir + "/minimal_union_%s_%s-%s" % (file0_first_gene_combn, file1_first_gene_combn, file1_max_readrow_n)
     mkdir(save_minimal_union_dir)
     start_union_data_collect(incmp_gene_comb_data_dir, save_minimal_union_dir)  # supplemented file1
     stat_data_path = data_dir + "/unfold_gene_combinations/unfold_statistics_files_summary.xlsx"  #
