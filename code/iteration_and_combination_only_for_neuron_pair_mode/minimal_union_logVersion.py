@@ -635,8 +635,7 @@ if __name__ == '__main__':
 
     # 固定参数
     unfold_gene_comb_dir = data_dir + "/unfold_gene_combinations"
-    save_minimal_union_dir = data_dir + "/minimal_union_%s_%s" % (file0_first_gene_combn,
-                                                                  file1_first_gene_combn)
+    save_minimal_union_dir = data_dir + "/minimal_union_%s_%s-%s" % (file0_first_gene_combn, file1_first_gene_combn, file1_max_readrow_n)
     mkdir(save_minimal_union_dir)
     # read & save
     read_unfold_gene_comb_format_path = unfold_gene_comb_dir + "/gene_combination_for_%s_%s.log"
